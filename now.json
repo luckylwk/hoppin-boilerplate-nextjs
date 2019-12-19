@@ -1,0 +1,52 @@
+{
+  "version": 2,
+  "name": "hoppin-next",
+  "scope": "hoppin",
+  "github": {
+    "enabled": false
+  },
+  "env": {
+    "NODE_ENV": "production",
+    "APP_URL": "",
+    "API_URL": "https://beta.gohoppin.com"
+  },
+  "build": {
+    "env": {
+      "NODE_ENV": "production",
+      "APP_URL": "",
+      "API_URL": "https://beta.gohoppin.com"
+    }
+  },
+  "builds": [
+    {
+      "src": "next.config.js",
+      "use": "@now/next"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/book/(.*)",
+      "dest": "/book/$1"
+    },
+    {
+      "src": "/",
+      "dest": "/$1"
+    },
+    {
+      "src": "/_next/(.*)",
+      "dest": "/_next/$1"
+    },
+    {
+      "src": "/static/(.*)",
+      "dest": "/static/$1"
+    },
+    {
+      "src": "/favicon.ico",
+      "dest": "/static/favicon.ico"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "https://app.gohoppin.com/$1"
+    }
+  ]
+}
