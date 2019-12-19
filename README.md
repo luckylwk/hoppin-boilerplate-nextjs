@@ -4,7 +4,9 @@ Hoppin with Next.js
 
 ## Install
 
-`make install` will set you up with an unversioned `.env` file and dependencies.
+```bash
+make install
+```
 
 ## Development
 
