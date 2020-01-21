@@ -1,10 +1,10 @@
 {
-  "name": "hoppin-next",
-  "version": "1.0.0",
-  "description": "Hoppin with Next.js",
+  "name": "hoppin-boilerplate",
+  "version": "0.0.1",
+  "description": "Hoppin Boilerplate with Next.js",
   "main": "next.config.js",
   "engines": {
-    "node": "10.x"
+    "node": "12.13.1"
   },
   "dependencies": {
     "@zeit/next-css": "1.0.1",

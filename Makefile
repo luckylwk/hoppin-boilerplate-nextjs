@@ -1,16 +1,17 @@
-.PHONY: install build dev start test test/ci test/pretty test/proxy test/local-proxy lint pretty deploy
+.PHONY: install clean build dev test test/ci test/pretty test/proxy test/local-proxy lint pretty deploy
 
 install:
 	yarn install
+
+clean:
+	rm -rf node_modules;
+	ls;
 
 build:
 	yarn build
 
 dev:
 	yarn dev
-
-start:
-	make dev
 
 test:
 	make lint
